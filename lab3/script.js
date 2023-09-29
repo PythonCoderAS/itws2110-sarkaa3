@@ -62,7 +62,7 @@ async function updateWeather() {
     const wind_speed = weather.wind.speed;
     const current_temp = parseFloat(document.getElementById("current-weather-temp").textContent);
 
-    document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${icon}.png`;
+    document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${icon}.png`;
     setValue("location", location_name);
     setValue("current-weather-temp", roundToFirstDecimal(temp));
     setValue("feels-like", roundToFirstDecimal(feels_like));
