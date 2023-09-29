@@ -32,10 +32,10 @@ async function getWeather() {
 
 function toTitleCase(str) {
     return str.replace(
-      /\w\S*/g,
-      function(txt) {
-        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-      }
+        /\w\S*/g,
+        function (txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
     );
 };
 
@@ -75,7 +75,7 @@ async function updateWeather() {
     setValue("weather-description", toTitleCase(description));
     setValue("weather-type", toTitleCase(main));
 
-    if(current_temp !== roundToFirstDecimal(temp)) {
+    if (current_temp !== roundToFirstDecimal(temp)) {
         await updatePhoto(temp);
     }
 }
@@ -121,7 +121,7 @@ async function main() {
     }
     await initial; // For error handling
     setInterval(updateWeather, 5 * 60 * 1000);
-    
+
 }
 
 window.addEventListener('load', main);
