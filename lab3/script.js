@@ -11,10 +11,10 @@ const imageCache = {};
 
 const projectEpoch = new Date(Date.UTC(2023, 8, 28, 12, 0, 0)) // All relative dates are relative to this date (September 28, 2023 at noon)
 
-const secondsInDay = 60 * 60 * 24;
+const millisecondsInDay = 60 * 60 * 24 * 1000;
 
 function getDaysBefore(numDays) {
-    return new Date(projectEpoch.getMilliseconds() - secondsInDay * numDays);
+    return new Date(projectEpoch.getTime() - (millisecondsInDay * numDays));
 }
 
 function getLocationAsync() {
@@ -44,24 +44,84 @@ function hPaToInHg(hPa) {
     return Math.round(base * 100) / 100; // Round to 2 decimal places
 }
 
+function roundToFirstDecimal(num) {
+    return Math.round(num * 10) / 10;
+}
+
+function setValue(id, value) {
+    document.getElementById(id).textContent = value;
+}
+
 async function updateWeather() {
     const weather = await getWeather();
-    console.log(weather)
-    const { temp, humidity } = weather.main;
+    // console.log(weather)
+    const { temp, feels_like, temp_min, temp_max, humidity, pressure } = weather.main;
+    const cloud_cover = weather.clouds.all;
     const { icon, main, description } = weather.weather[0];
-    
+    const location_name = weather.name;
+    const wind_speed = weather.wind.speed;
+    const current_temp = parseFloat(document.getElementById("current-weather-temp").textContent);
+
     document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${icon}.png`;
+    setValue("location", location_name);
+    setValue("current-weather-temp", roundToFirstDecimal(temp));
+    setValue("feels-like", roundToFirstDecimal(feels_like));
+    setValue("high", roundToFirstDecimal(temp_max));
+    setValue("low", roundToFirstDecimal(temp_min));
+    setValue("wind", wind_speed);
+    setValue("humidity", humidity);
+    setValue("cloud-cover", cloud_cover);
+    setValue("pressure", hPaToInHg(pressure));
+    setValue("weather-description", toTitleCase(description));
+    setValue("weather-type", toTitleCase(main));
+
+    if(current_temp !== roundToFirstDecimal(temp)) {
+        await updatePhoto(temp);
+    }
+}
+
+function dateToYYYYMMDD(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0"); // Month is 0-indexed
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+}
+
+async function getPhoto(temp) {
+    const temp_normalized = Math.round(temp * 10); // Shift decimal place to the right by 1
+    if (imageCache[temp_normalized]) {
+        return imageCache[temp_normalized];
+    }
+    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=MGKQc6PzBXyCQGvb4u3kZ8pfxdK9mWSYENSWxthw&date=${dateToYYYYMMDD(getDaysBefore(temp_normalized))}`);
+    const json = await response.json();
+    if (json.url.startsWith("https://apod.nasa.gov/apod/image/")) {
+        imageCache[temp_normalized] = json.url;
+        return json.url;
+    } else {
+        const actual_photo = await getPhoto(temp_normalized - 0.1);
+        imageCache[temp_normalized] = actual_photo;
+        return actual_photo;
+    }
+}
+
+async function updatePhoto(temp) {
+    const url = await getPhoto(temp);
+    document.querySelector('body').style.backgroundImage = `url('${url}')`;
 }
 
 async function main() {
+    const initial = updateWeather(); // Update weather immediately, we can wait for coordinates later and re-update
     try {
         const position = await getLocationAsync();
         const { latitude, longitude } = position.coords;
         data.location.coords = { latitude, longitude };
+        await updateWeather();
     } catch {
         // Ignore
     }
-    await updateWeather();
+    await initial; // For error handling
+    setInterval(updateWeather, 5 * 60 * 1000);
+    
 }
 
 window.addEventListener('load', main);
