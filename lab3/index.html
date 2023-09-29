@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Troy Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <link href="./style.css" rel="stylesheet">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <main>
+            <div id="main-container" class="border">
+                <h1 class="text-center">Weather at <span id="location">Troy, NY</span></h1>
+                <hr />
+                <div id="parts" class="row align-items-center">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d.png" alt="Weather Icon" class="col-2">
+                    <div id="current-weather" class="col text-nowrap border text-center" aria-label="Current Weather">
+                        <div id="current-weather-line" class="fs-2"><span id="current-weather-temp">70</span>&deg;F</div>
+                            <div id="feels-like-line" class="fs-3">Feels like <span id="feels-like">70</span>&deg;F</div>
+                    </div>
+                    <div id="other-weather-info-slides" class="col carousel slide text-nowrap text-center bg-info" aria-label="Other Weather Information" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="weather-type" class="fs-3">Sunny</div>
+                                <div id="weather-description" class="fs-4">Sunny</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div id="high-line" class="fs-4">High: <span id="high">70</span>&deg;F</div>
+                                <div id="low-line" class="fs-4">Low: <span id="low">70</span>&deg;F</div>
+                            </div>
+                            <div class="carousel-item">
+                              <div id="wind-line" class="fs-4">Wind: <span id="wind">70</span> mph</div>
+                              <div id="cloud-cover-line" class="fs-4">Cloud Cover: <span id="cloud-cover">70</span>%</div>
+                            </div>
+                            <div class="carousel-item">
+                              <div id="humidity-line" class="fs-4">Humidity: <span id="humidity">70</span>%</div>
+                              <div id="pressure-line" class="fs-4">Pressure: <span id="pressure">30.27</span> inHg</div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#other-weather-info-slides" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#other-weather-info-slides" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#other-weather-info-slides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#other-weather-info-slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#other-weather-info-slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#other-weather-info-slides" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

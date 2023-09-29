@@ -1,0 +1,40 @@
+.text-center {
+    text-align: center;
+}
+
+body {
+    height: 100%;
+    background-image: url("https://apod.nasa.gov/apod/image/2309/BlueHorse_Grelin_1080.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+#main-container {
+    background-color: white;
+    padding: 30px;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+}
+
+.carousel-inner {
+    padding: 10px;
+}
+
+#parts > *:not(:first-child) {
+    margin-left: 15px;
+}
+
+#other-weather-info-slides {
+    min-height: 8em;
+}
