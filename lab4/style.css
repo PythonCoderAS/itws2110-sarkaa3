@@ -1,0 +1,200 @@
+/* Reset some default styles and set colors similar to RPI */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+}
+
+header {
+    background-color: #cc0000; /* RPI Red */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #cc0000; /* RPI Red */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+}
+
+nav li a:hover {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff70;
+  }
+
+
+section {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #cc0000; /* RPI Red */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px;
+}
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex; /* Make items display horizontally */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.carousel-item {
+    flex: 0 0 100%; /* Make items take up full width */
+    /* Additional styling for item appearance */
+}
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+
+/* style.css */
+
+/* Header styles */
+header {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNZDev98R8eaqYV-fBBHLVEJH61vTwp5dRpo-PZBoapnjmysOK5WHvaIM0ts9DbqzN4g&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+/* Header text styles */
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact-box {
+    width: 300px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box input, .contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-box input[type="submit"] {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+}
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.faculty-member {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.faculty-member:hover {
+    transform: scale(1.05);
+}
+
+.faculty-member img {
+    width: 100%;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.faculty-member p {
+    margin: 0;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
