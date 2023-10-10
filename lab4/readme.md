@@ -1,20 +1,16 @@
-give me the html css and javascript for a website about Rensselear Polytechnic Institute's ITWS program
+1. Can you give me an HTML image tag linking to "https://science.rpi.edu/sites/default/files/styles/large/public/Updated%20CTF%20Photo%20with%20Chris.png?itok=7z339w80"
+2. Do not provide an ALT tag
+3. Image tag "https://science.rpi.edu/sites/default/files/styles/large/public/photo%20of%20Rick%20teaching%20for%20webpage_edited_0.jpg?itok=fG8wLNnG"
+4. Image tag "https://science.rpi.edu/sites/default/files/styles/large/public/open_source.jpg?itok=cluMnYrL"
+5. Image tag https://science.rpi.edu/sites/default/files/styles/large/public/Photo%20students%20website_edited.jpg?itok=ihTLC3tR
+6. HTML script tag to load script.js 
+7. Rename this chunk of code to use the variable name carousel instead of carouselContainer:
+carouselContainer.addEventListener('mouseenter', () => {
+  clearInterval(interval);
+});
 
-make the colors of that website similar to the official Rensselaer Polytechnic Institute website
-
-generate the html for all of the pages
-
-fill in the header and footer for those HTML files
-
-Add an image to the head of the site names ITWS_header.png
-
-Why is the image not working 
-
-Make the image the whole background header
-
-add the rest of my html back and add the css in a seperate file
-
-fill in the rest of my html leave none out
-
-there is an extra copy of the image in the header, remove it
-
+// Optional: Resume autoscroll on mouseout
+carouselContainer.addEventListener('mouseleave', () => {
+  interval = setInterval(nextSlide, intervalTime);
+});
+8. 

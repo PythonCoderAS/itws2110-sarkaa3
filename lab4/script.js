@@ -13,12 +13,12 @@ function nextSlide() {
 interval = setInterval(nextSlide, intervalTime);
 
 // Optional: Pause on hover
-carouselContainer.addEventListener('mouseenter', () => {
+carousel.addEventListener('mouseenter', () => {
   clearInterval(interval);
 });
 
 // Optional: Resume autoscroll on mouseout
-carouselContainer.addEventListener('mouseleave', () => {
+carousel.addEventListener('mouseleave', () => {
   interval = setInterval(nextSlide, intervalTime);
 });
 
