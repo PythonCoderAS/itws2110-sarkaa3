@@ -198,3 +198,13 @@ header p {
     display: flex;
     justify-content: space-between;
 }
+
+/* Add spacing between different heading levels and paragraphs */
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+/* Add spacing between list items */
+ul li {
+    margin-bottom: 10px;
+}
