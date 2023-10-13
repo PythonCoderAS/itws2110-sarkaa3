@@ -118,3 +118,81 @@ ITWS-2110 Web Systems Development (CSCI 1200 Data Structures is a pre-requisite 
 ITWS-4310 Managing IT Resources1
 1 MGMT Majors only – Take ITWS-4100 Information Technology and Web Science Capstone or other course as approved by faculty advisor.
 20. Only produce the code for the new section and make it start from an h2
+21. Format this text in HTML and only give me the HTML for the section:
+
+Solve problems in data- and information-intensive world.
+The Rensselaer M.S. in Information Technology balances the study of management strategies and technology leadership with advanced course work in an IT concentration. Students complete a suite of core and capstone courses and also select three to five additional courses to complete their concentrations. Professional and research tracks are offered for the M.S. in IT degree.
+
+ 
+
+Learn more about our featured graduate students: here
+
+Plan of Study
+All students develop a Plan of Study with their IT Advisor which includes a minimum of 10 courses (30 credits), a minimum of six courses (eighteen credits or more) at the 6000 graduate level, and no more than 5 courses from the Lally School of Management and Technology (prefix MGMT).
+22. Start from h3 instead of h2
+23. Please format this text in HTML and only provide the HTML for this section:
+
+
+CORE
+Master's students take one required course from each of the five core areas listed below to gain a breadth of IT knowledge.  Advance core options are available.
+
+Database Systems
+Data Analytics
+Software Design and Engineering
+Management of Technology (Research track will not be required to take this core class.)
+Human Computer Interaction
+24. Please start from h3
+25. Format this text in HTML: FOCUS TRACKS
+Focus Tracks are designed to provide an in-depth experience in the application of Information Technology.  Students choose from one of twelve focus tracks and complete a minimum of 3 courses within their focus track.
+
+Cognitive Computing
+Data Science and Analytics
+Database and Intelligent Systems
+Financial Engineering
+Human-Computer Interaction
+Information Dominance
+Information Security
+Information Systems Engineering
+Management Information Systems
+Networking
+Software Design and Engineering
+Web Science
+26. Format this text in HTML: PROFESSIONAL TRACK
+Capstone Course
+
+The M.S. in IT Capstone course integrates the knowledge and professional practice of IT core and focus track courses. Topics in database systems, networking, data analytics, software design and engineering, management of technology, human computer interaction, and ethics are applied within a framework of global e-business strategy. The course utilizes an Information Technology Team Project with a real organization to practice the major concepts of the IT Degree. Team members select, develop, and present a significant technology implementation project, incorporating strategy, systems development, and business planning.
+27. Format this text in HTML: 
+RESEARCH TRACK
+The research track for the M.S. in IT allows a student to complete a one semester Master's Project or a two semester Master's Thesis.
+28. Format this text in HTML: PROGRAM OUTCOME
+Students who successfully complete this program will be able to demonstrate:
+
+Core knowledge in database systems, data analytics, software design and engineering, management of technology and human-computer interaction.
+Detailed knowledge in one or more ITWS domain areas.
+Strong communication skills with colleagues, both technical and non-technical.
+A high level of professionalism in the execution of IT projects or research (Professional Track).
+Proficiency in research methods and analysis (Research Track).
+29. Format this text in HTML: 
+ADMISSIONS REQUIREMENTS
+The following materials are required for your applicaton to be considered:
+
+GPA of at least 3.0
+Resume or CV
+Undergraduate transcripts
+Undergraduate core coursework including Data Structures and Computer Science I.
+At least two letters of recommendation, three letters strongly recommended
+Personal statement
+IT Background Evaluation form
+The GRE exam is not required for admission and will not be considered in decision making.
+
+Significant industry experience may be used to remedy deficiencies in undergraduate core coursework.
+30. Generate HTML code for an Announcement linking to "https://science.rpi.edu/itws/news/2020-06-03-1534/interview-teaching-home-scholastic-view-life-during-pandemic-john-stotz" titled "Interview: On teaching at home A scholastic view of life during the pandemic by By John Stotz, Sarah Shiang, and Medhini Mankale". Please make up the description.
+31. Make the provided title a heading and generate the body text
+32. Can you put this section inside of a larger "Announcements" section?
+33. Make the announcements start from h2
+34. Make the announcements heading itself start from h2
+35. No, please make the announcement heading start from h2 and the individual assignment start from h3
+36. Make a section titled "News", and add a section inside of the news section linking to "https://science.rpi.edu/information-technology-and-web-science/news/rensselaer-polytechnic-institute-plans-deploy-first-ibm" and with the title "Rensselaer Polytechnic Institute Plans to Deploy First IBM Quantum System One on a University Campus". Please generate a description.
+37. Generate HTML for a new news section linking to "https://science.rpi.edu/information-technology-and-web-science/news/rensselaer-graduates-recognized-resilience-perseverance" titled "Rensselaer Graduates Recognized for Resilience, Perseverance at 217th Commencement" with a generated description
+38. Please start from h3
+39. Generate HTML for a new news section linking to "https://science.rpi.edu/information-technology-and-web-science/news/more-1900-degrees-be-awarded-217th-rensselaer" titled More Than 1,900 Degrees To Be Awarded at 217th Rensselaer Polytechnic Institute Commencement Ceremony with a generated description
