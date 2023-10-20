@@ -42,3 +42,7 @@ main {
 hr {
   border: 2px solid;
 }
+
+#money > *:not(:first-child) {
+  margin-bottom: 15px;
+}

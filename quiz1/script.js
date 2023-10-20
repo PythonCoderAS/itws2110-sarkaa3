@@ -4,7 +4,8 @@ const data = {
             latitude: 42.729670486377735,
             longitude: -73.6801994794444
         }
-    }
+    },
+    money: null,
 };
 
 const imageCache = {};
@@ -110,7 +111,31 @@ async function updatePhoto(temp) {
     document.querySelector('body').style.backgroundImage = `url('${url}')`;
 }
 
-async function main() {
+async function getMoney() {
+    const response = await fetch("https://api.frankfurter.app/latest?base=USD");
+    const json = await response.json();
+    data.money = json;
+    return json;
+}
+
+function convert() {
+    const source = document.querySelector("#source-currency-name").innerHTML;
+    const dest = document.querySelector("select#dest-currency-name").value;
+    console.log({source, dest});
+    const sourceVal = Number(document.querySelector("#source-currency").value);
+    console.log({source, dest});
+    let sourceTrueVal = sourceVal;
+    if (source !== "USD") {
+        sourceTrueVal = sourceTrueVal / data.money.rates[source];
+    }
+    document.querySelector("#dest-currency").innerHTML = String(sourceTrueVal * data.money.rates[dest]);
+}
+
+function randomNumber(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+async function weatherMain() {
     const initial = updateWeather(); // Update weather immediately, we can wait for coordinates later and re-update
     try {
         const position = await getLocationAsync();
@@ -121,8 +146,47 @@ async function main() {
         // Ignore
     }
     await initial; // For error handling
-    setInterval(updateWeather, 5 * 60 * 1000);
+}
 
+async function main() {
+    const weatherMainLoad = weatherMain();
+    const loadMoneyData = getMoney();
+    setInterval(updateWeather, 5 * 60 * 1000);
+    console.log(0);
+    const money = await loadMoneyData; // For error handling
+    console.log(1);
+    const selectMenu = document.querySelector("#dest-currency-name");
+    console.log(2);
+    Object.keys(money.rates).forEach((key) => selectMenu.innerHTML += `<option value="${key}">${key}</option>`);
+    console.log(3);
+    document.querySelector("#convert").addEventListener("click", convert);
+    console.log(4);
+    document.querySelector("#american").addEventListener("click", function() {
+        document.querySelector("#source-currency-name").innerHTML = "USD";
+        convert();
+    });
+    console.log(5);
+    document.querySelector("#british").addEventListener("click", function() {
+        document.querySelector("#source-currency-name").innerHTML = "GBP";
+        convert();
+    });
+    console.log(6);
+    document.querySelector("#european").addEventListener("click", function() {
+        document.querySelector("#source-currency-name").innerHTML = "EUR";
+        convert();
+    });
+    console.log(7);
+    document.querySelector("#source-currency").addEventListener("change", function() {
+        if (document.querySelector("#autoconvert").checked){
+            convert();
+        }
+    });
+    console.log(8);
+    document.querySelector("#ultra-random").addEventListener("onmouseover", function() {
+        document.querySelector("#source-currency-name").innerHTML = Object.keys(money.rates)[randomNumber(0, Object.keys(money.rates).length)];
+    });
+    console.log(9);
+    await weatherMainLoad;
 }
 
 window.addEventListener('load', main);

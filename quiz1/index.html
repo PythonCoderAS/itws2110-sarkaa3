@@ -71,8 +71,35 @@
         </div>
       </div>
       <hr />
-      <div id="money" class="row align-items-center">
+      <div id="money" class="align-items-center">
         <h2>Today's $, £, €, and more!</h2>
+        <div class="btn-toolbar" role="toolbar" aria-label="Currency Conversion Control Toolbar">
+          <div class="btn-group me-2" role="group" aria-label="Conversion Actions">
+            <button type="button" class="btn btn-primary" id="convert">Convert</button>
+            <input type="checkbox" class="btn-check" id="autoconvert" autocomplete="off">
+            <label class="btn btn-outline-primary" for="autoconvert">Auto Convert</label>
+            <input type="checkbox" class="btn-check" id="keep-source" autocomplete="off">
+          </div>
+          <div class="btn-group me-2" role="group" aria-label="Source Currency">
+            <button type="button" class="btn btn-primary" id="american">I'm Feeling American 🦅</button>
+            <button type="button" class="btn btn-primary" id="british">I'm Feeling Bri'ish ☕</button>
+            <button type="button" class="btn btn-primary" id="european">I'm Feeling European ⚔️</button>
+            <button type="button" class="btn btn-warning" id="ultra-random">Find Out!</button>
+          </div>
+        </div>
+        <div aria-label="Conversion pairs" class="row">
+          <div class="col col-6 text-center border-end p-2" aria-label="Source Currency">
+            <input class="form-control" id="source-currency" type="number" min="0" step="0.01" value="1" aria-label="Source Currency Amount">
+            <label for="source-currency" id="source-currency-name">USD</label>
+          </div>
+          <div class="col col-6 text-center p-2" aria-label="Destination Currency">
+            <div id="dest-currency" aria-label="Destination Currency Amount">
+              1</div>
+            <select id="dest-currency-name" name="dest-currency-name">
+              <option value="USD">USD</option>
+            </select>
+          </div> 
+        </div>
       </div>
     </div>
   </main>
