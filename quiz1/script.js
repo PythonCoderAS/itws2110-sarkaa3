@@ -182,7 +182,7 @@ async function main() {
         }
     });
     console.log(8);
-    document.querySelector("#ultra-random").addEventListener("onmouseover", function() {
+    document.querySelector("#ultra-random").addEventListener("mouseover", function() {
         document.querySelector("#source-currency-name").innerHTML = Object.keys(money.rates)[randomNumber(0, Object.keys(money.rates).length)];
     });
     console.log(9);
