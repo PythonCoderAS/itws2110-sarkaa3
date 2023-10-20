@@ -121,14 +121,14 @@ async function getMoney() {
 function convert() {
     const source = document.querySelector("#source-currency-name").innerHTML;
     const dest = document.querySelector("select#dest-currency-name").value;
-    console.log({source, dest});
     const sourceVal = Number(document.querySelector("#source-currency").value);
-    console.log({source, dest});
+    console.log({source, dest, sourceVal});
     let sourceTrueVal = sourceVal;
     if (source !== "USD") {
         sourceTrueVal = sourceTrueVal / data.money.rates[source];
     }
-    document.querySelector("#dest-currency").innerHTML = String(sourceTrueVal * data.money.rates[dest]);
+
+    document.querySelector("#dest-currency").innerHTML = String(dest === "USD" ? sourceTrueVal : sourceTrueVal * data.money.rates[dest]);
 }
 
 function randomNumber(min, max) {
