@@ -120,7 +120,7 @@
                         }
                     }
                     if (isset($_GET["operator"])) {
-                        $result = $GLOBALS[$_GET["operator"]]->calculate($_GET["num1"], $_GET["num2"]);
+                        $result = $GLOBALS[$_GET["operator"]]()->calculate($_GET["num1"], $_GET["num2"]);
                         echo "<p>Result: $result</p>";
                     } else {
                         echo "<p>Submit something please</p>";
