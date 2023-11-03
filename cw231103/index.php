@@ -46,6 +46,9 @@
             <section id="output">
                 <h2>Output</h2>
                 <?php 
+                    ini_set('display_errors', '1');
+                    ini_set('display_startup_errors', '1');
+                    error_reporting(E_ALL);
                     interface Operation {
                         function calculate($num1, $num2);
                     }
@@ -120,7 +123,48 @@
                         }
                     }
                     if (isset($_GET["operator"])) {
-                        $result = $GLOBALS[$_GET["operator"]]()->calculate($_GET["num1"], $_GET["num2"]);
+                        $result;
+                        switch ($_GET["operator"]) {
+                            case "Add":
+                                $result = (new Add())->calculate($_GET["num1"], $_GET["num2"]);
+                                break;
+                            case "Sub":
+                                $result = (new Sub())->calculate($_GET["num1"], $_GET["num2"]);
+                                break;
+                            case "Mul":
+                                $result = (new Mul())->calculate($_GET["num1"], $_GET["num2"]);
+                                break;
+                            case "Div":
+                                $result = (new Div())->calculate($_GET["num1"], $_GET["num2"]);
+                                break;
+                            case "Sqrt":
+                                $result = (new Sqrt())->calculate($_GET["num1"], 0);
+                                break;
+                            case "Pow2":
+                                $result = (new Pow2())->calculate($_GET["num1"], 0);
+                                break;
+                            case "Pow":
+                                $result = (new Pow())->calculate($_GET["num1"], $_GET["num2"]);
+                                break;
+                            case "Log10":
+                                $result = (new Log10())->calculate($_GET["num1"], 0);
+                                break;
+                            case "Log2":
+                                $result = (new Log2())->calculate($_GET["num1"], 0);
+                                break;
+                            case "TenPow":
+                                $result = (new TenPow())->calculate($_GET["num1"], 0);
+                                break;
+                            case "EPow":
+                                $result = (new EPow())->calculate($_GET["num1"], 0);
+                                break;
+                            case "Sin":
+                                $result = (new Sin())->calculate($_GET["num1"], 0);
+                                break;
+                            case "Cos":
+                                $result = (new Cos())->calculate($_GET["num1"], 0);
+                                break;
+                        }
                         echo "<p>Result: $result</p>";
                     } else {
                         echo "<p>Submit something please</p>";
