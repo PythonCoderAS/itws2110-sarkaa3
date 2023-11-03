@@ -30,7 +30,7 @@
                     <script>
                         function setNum2() {
                             var operator = document.getElementsByName("operator")[0].value;
-                            if (operator == "sqrt" || operator == "pow2" || operator == "log10" || operator == "log2" || operator == "10pow" || operator == "epow" || operator == "sin" || operator == "cos" || operator == "tan") {
+                            if (operator == "Sqrt" || operator == "Pow2" || operator == "Log10" || operator == "Log2" || operator == "TenPow" || operator == "EPow" || operator == "Sin" || operator == "Cos" || operator == "Tan") {
                                 document.querySelector("input#num2").disabled = true;
                                 document.querySelector("input#num2").required = false;
                             } else {
