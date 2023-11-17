@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hell-MS</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="navigator">
+            <div class="container" onclick="showhide(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            <ul id="navelements" class="visible">
+                <a href="#dummyanchor">
+                    <li>TestHeader</li>
+                </a>
+            </ul>
+        </div>
+        <div class="content">
+            <img id="logo" src="./images/logo.png">
+            <div class="classitem">
+                <h3 class="title"><img class="bapho" src="./images/bapho.jpg">Dummy Title<img class="bapho"
+                        src="./images/bapho.jpg"></h3>
+                <div class="item">
+                    <p class="description">Welcome to our lab 6. If you wish to view the contents of Web Sys, use the dropdown bar on the left of your screen. If you wish to instead upload the data you see here to tables in phpmyadmin for storage, click the link bellow.</p>
+                    <a class="link" href="index.php">Add/Remove databases</a>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+    </div>
+</body>
+
+<script>
+    function showhide(x){
+        document.getElementById('navelements').classList.toggle('visible');
+        x.classList.toggle("change");
+    }
+</script>
+
+</html>

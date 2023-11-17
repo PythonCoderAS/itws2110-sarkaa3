@@ -1,0 +1,122 @@
+{
+    "ITWS2110": {
+        "Lectures": [
+            {
+                "Title": "8/29: Syllabus and calendar",
+                "Description": [
+                    "Web Systems Development Fall 2023: ITWS 2110-0{1,2}, CSCI 2960-01"
+                ],
+                "Link to Slideshow": [
+                    "https://docs.google.com/presentation/d/108X6S-Xjn_RWOtriaLqWZhVgV6sYk4KXIpAobzW2HbI/edit#slide=id.p"
+                ]
+            },
+            {
+                "Title": "9/8: Choose your own adventure",
+                "Description": [
+                    "The Basics Web Sys F23, 2023-09-08",
+                    "git learn lecture"
+                ],
+                "Link to Slideshow": [
+                    "https://docs.google.com/presentation/d/1jZV3MJSI0rRpbwSsD3cIHG81N-p9wMFpAsG9MXZK30A/edit",
+                    "https://docs.google.com/presentation/d/1AAqHOY4yykSkNBdf_KzP5WfjE6lkkm9MJ_8ZOXBiOd4/edit"
+                ]
+            },
+            {
+                "Title": "9/12: Markup languages",
+                "Description": [
+                    "20230912"
+                ],
+                "Link to Slideshow": [
+                    "https://drive.google.com/file/d/1R3rh_VvkP7LpuCp4T17P8wZEoETcXOLh/view?usp=sharing"
+                ]
+            },
+            {
+                "Title": "9/15: CSS",
+                "Description": [
+                    "Cascading Style Sheets (CSS)",
+                    "Advanced CSS workshop"
+                ],
+                "Link to Slideshow": [
+                    "https://docs.google.com/presentation/d/13l9w_KRL1IEO2GLHJj4P4IJ6PY7_lB2q/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true",
+                    "https://docs.google.com/presentation/d/1X9aAnFKEc3PYCNgS46zyn32CgX9oCD5UjPqwzPDii-M/edit?usp=sharing"
+                ]
+            },
+            {
+                "Title": "9/22: JSON, AJAX, APIs, Lab 3",
+                "Description": [
+                    "JavaScript It’s a thing",
+                    "AJAX & JSON",
+                    "APIs!!! September 22, 2023"
+                ],
+                "Link to Slideshow": [
+                    "https://docs.google.com/presentation/d/1tKj67JL_ex72SwJdO7IaWOeJiVjKjwDRTQ2HGNSxbIo/edit?usp=sharing",
+                    "https://docs.google.com/presentation/d/15RDN4Vpp8mSGlp-XS22-RsMf33Xdv9vHJ9JGS0arpLI/edit?usp=sharing",
+                    "https://docs.google.com/presentation/d/13zQaEmzgy7yJ5tInYNZmxt04m9FOT1PxS1YZqZsW7tE/edit?usp=sharing"
+                ]
+            },
+            {
+                "Title": "10/10: Quiz review & Optimization",
+                "Description": [
+                    "Front End Optimization"
+                ],
+                "Link to Slideshow": [
+                    "https://docs.google.com/presentation/d/1e6rstQNTcUzl04qNhBUkLpRFqZMQ1Ife5EXRb9GN_sI/edit"
+                ]
+            },
+            {
+                "Title": "11/3: PHP",
+                "Description": [
+                    "PHP",
+                    "More PHP Interfaces, Abstract classes, Polymorphism"
+                ],
+                "Link to Slideshow": [
+                    "https://docs.google.com/presentation/d/1XHGE865dS0OAAvIkSOxo4OGclnJNHgoV/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true",
+                    "https://docs.google.com/presentation/d/1n56kYE72sGKdw8_wuEkugvqtHyrwO7dr4nMG4X_sERo/edit?usp=sharing"
+                ]
+            },
+            {
+                "Title": "11/7: MySQL",
+                "Description": [
+                    "MySQL Web Sys I - MySQL 1",
+                    "PHP and MySQL Sessions & Persistence"
+                ],
+                "Link to Slideshow": [
+                    "https://docs.google.com/presentation/d/1wVjDq5CMAsWWuf4MWgF-svHqqix71ivs/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true",
+                    "https://docs.google.com/presentation/d/1M76F4rpkHgDgrDPrsLaR5ZgXeWoC8THN/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true"
+                ]
+            }
+        ],
+        "Labs": [
+            {
+                "Title": "Lab 1",
+                "Description": "Group portfolio",
+                "Link to Instructions": "https://docs.google.com/document/d/1TVsVEJKSUBs4KEwSUe6QFsp-t_a8h4s1toh9jjKjHfw/edit"
+            },
+            {
+                "Title": "Lab 2",
+                "Description": "Lab 2 Due 9/15 before you walk in the door Create a new folder in your group repo for this assignment, in which everything for this lab will be placed. Host the final product in your group VM in a directory named “constitution” – aka http://[yourGroupVMname].eastus.cloudapp.azure.com/constitut...",
+                "Link to Instructions": "https://docs.google.com/document/d/1A3B7FTbxIw71oOCAiBsfEHdHcXeef1gjrXsG-VI6e-U/edit?usp=sharing"
+            },
+            {
+                "Title": "Lab 3",
+                "Description": "Lab 3 – JavaScript, AJAX, JSON, using APIs Due 9/29 before class Weather and <insert other API here> app This is an individual lab. To be hosted on your personal Azure VM at http://<your-VM-URL>/<your-personal-GitHub-repo>/lab3 Use OpenWeatherMap for this lab! Connect to its API and see what info...",
+                "Link to Instructions": "https://docs.google.com/document/d/1-D4VYKxBo2OnHR4Pyg9kPkoQajd3vsBgHUzRvdlo6Xw/edit?usp=sharing"
+            },
+            {
+                "Title": "Lab 4",
+                "Description": "Lab 4 Due: 10/13 before you walk in the door Post the website you made in class on Tuesday to your personal VM. Add to that site using only ChatGPT (or Bard, or any other Generative AI) generated code. You may no longer write any code yourself or edit any code the AI provides. If you don’t like ...",
+                "Link to Instructions": "https://docs.google.com/document/d/1SoU_8JJEjfdOLIclXF4TeXEFFYbXKTH9IWUG2gHSazY/edit?usp=sharing"
+            },
+            {
+                "Title": "Lab 5",
+                "Description": "Lab 5 - Frontend Optimization Due October 31 before you walk in the door. Optimizations We are going to optimize a game I made called Free Bee as found at https://freebee.fun/play/ It is a clone of the New York Times game Spelling Bee. You can find the source code for the game here: https://git...",
+                "Link to Instructions": "https://docs.google.com/document/d/1u3gqViUz15LTJ-6F0aucM_EP9gzus1L09BgqOMy8nvA/edit?usp=sharing"
+            },
+            {
+                "Title": "Lab 6",
+                "Description": "Lab 6 Due 11/10 before you walk in the door! We are going to remake the single spookiest piece of software ever to exist–LMS! This is a group lab. Part 1 In phpmyadmin or the command line: Create a database named lab6. Create a table named courses. It should contain crn (int 11, primary key), ...",
+                "Link to Instructions": "https://docs.google.com/document/d/1oC6BOAmPbR0p6j_DWXWK_FInNgT8JaiUAwMWEnQf4Vw/edit?usp=sharing"
+            }
+        ]
+    }
+}
