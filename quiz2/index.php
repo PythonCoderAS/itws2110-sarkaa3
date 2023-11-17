@@ -21,9 +21,9 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 $user = "root";
-$pass = "team5";
+$pass = "sarkaa3";
 try {
-    $dbh = new PDO("mysql:host=localhost;dbname=lab6", $user, $pass);
+    $dbh = new PDO("mysql:host=localhost;dbname=quiz2", $user, $pass);
 } catch (PDOException $e) {
     echo "ERROR";
 }
@@ -190,9 +190,9 @@ if (isset($_POST["new_table"]) || isset($_POST["switch"])) {
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 $user = "root";
-$pass = "team5";
+$pass = "sarkaa3";
 try {
-    $dbh = new PDO("mysql:host=localhost;dbname=lab6", $user, $pass);
+    $dbh = new PDO("mysql:host=localhost;dbname=quiz2", $user, $pass);
 } catch (PDOException $e) {
     echo "ERROR";
 }
