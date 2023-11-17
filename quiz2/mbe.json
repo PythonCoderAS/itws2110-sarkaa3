@@ -3,63 +3,63 @@
         "Lectures": [
             {
                 "Title": "8/29: Syllabus and Review",
-                "Description": "Modern Binary Exploitation (CSCI 4967/ITWS 4967) Fall 2022",
+                "Description": ["Modern Binary Exploitation (CSCI 4967/ITWS 4967) Fall 2022"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1XPqoocF5CX0g2PPVjINbblczLPBoVMQJCTbnVTOrbR4/edit"
                 ]
             },
             {
                 "Title": "9/3: Reverse Engineering",
-                "Description": "Have you tried reversing it?",
+                "Description": ["Have you tried reversing it?"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1njsyW0uWA4TKp1B-8vtEOFuNxsBuhxmY4EEt_x5pi7o/edit#slide=id.g4474cfbc15_0_246"
                 ]
             },
             {
                 "Title": "9/9: Memory Corruption",
-                "Description": "Memory Corruption",
+                "Description": ["Memory Corruption"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1avKXYm4CoxWyK93gxyJVcawbox8JUyIGs0wNNwHuhYg/edit#slide=id.gc8692888a_1_0"
                 ]
             },
             {
                 "Title": "2/13: Shellcoding",
-                "Description": "Shellcoding",
+                "Description": ["Shellcoding"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1CbZQjUoGFJeID5Tc5j2Ez0IkhFf3Lanhw3WTiiNdGWI/edit#slide=id.gc8692888a_1_0"
                 ]
             },
             {
                 "Title": "9/23: Stack Cookies",
-                "Description": "Stack Cookies",
+                "Description": ["Stack Cookies"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1vaRbpP0jNr245BMAqjR_0IkAiSZVAM9LteR2Tu4mNLk/edit#slide=id.gc8692888a_1_0"
                 ]
             },
             {
                 "Title": "9/30: DEP and ROP",
-                "Description": "Data Execution Prevention & Return Oriented Programming",
+                "Description": ["Data Execution Prevention & Return Oriented Programming"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1mFhnVrPVt8TiFcEFqCIXUGePWQis5k8ossX-A0uuz6E/edit#slide=id.gc8692888a_1_0"
                 ]
             },
             {
                 "Title": "2/27: ASLR",
-                "Description": "It must be unexploitable. Confirmed unsolvable.",
+                "Description": ["It must be unexploitable. Confirmed unsolvable."],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1GkPEr_IYfMW4ISOLeVF0IGGyM5G8NQKqlwaCLKSAPGU/edit#slide=id.gc8692888a_1_0"
                 ]
             },
             {
                 "Title": "Advanced Defenses",
-                "Description": "The “blue team” side of our exploit toolbox",
+                "Description": ["The “blue team” side of our exploit toolbox"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1NNuxVy220xdbuaa7e7njF-GC4sRB5Z8QM6ZMKyzXZcg/edit#slide=id.p"
                 ]
             },
             {
                 "Title": "11/04: Heap Exploitation",
-                "Description": "malloc, free",
+                "Description": ["malloc, free"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1m_Oc1GuOp20cttQ3l2r-jNTgU9xh9rzjZJLOS19ziHc/edit#slide=id.gc8692888a_1_0"
                 ]
@@ -73,7 +73,7 @@
             },
             {
                 "Title": "11/18: Race Conditions",
-                "Description": "Vroom Vroom",
+                "Description": ["Vroom Vroom"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1WBlbRUvJLU7MTQU9udw0IBzq20c2Dh1A-9HLkwWREzI/edit#slide=id.gc8692888a_1_0"
                 ]
