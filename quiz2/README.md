@@ -5,7 +5,7 @@
 ## Part 3
 Located at https://sarkaa3rpi169285.eastus.cloudapp.azure.com/itws2110-sarkaa3/quiz2/index.php
 
-The original code is copied from Lab 6 (https://teambitphotos.eastus.cloudapp.azure.com/lab6/).
+The original code is copied from Lab 6 (https://teambitphotos.eastus.cloudapp.azure.com/lab6/). I have *creatively* re-used the stylesheets and added some humor to the title and logo.
 
 Links:
 

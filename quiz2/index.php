@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="./images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hell-MS</title>
+    <title>Hell-MS 2.0</title>
     <link href="./style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
@@ -157,6 +157,7 @@ if (isset($_POST["new_table"]) || isset($_POST["switch"])) {
       </div>
       <div class="content">
         <img id="logo" src="./images/logo.png">
+        <h2 class="center">Now with even more hellish courses to choose from</h2>
         <div class="classitem">
           <h3 class="title">
             <img class="bapho" src="./images/bapho.jpg">Dummy Title <img class="bapho" src="./images/bapho.jpg">

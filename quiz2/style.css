@@ -128,3 +128,7 @@ body {
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+
+.center {
+    text-align: center;
+}

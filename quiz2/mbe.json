@@ -66,7 +66,7 @@
             },
             {
                 "Title": "2/13: More Types of Bugs",
-                "Description": "Some Cool Bug Classes",
+                "Description": ["Some Cool Bug Classes"],
                 "Link to Slideshow": [
                     "https://docs.google.com/presentation/d/1EXdzSb38NDFuq1YP3EPs2IThOu1LaPkAl_0sbEyB3S8/edit#slide=id.gc8692888a_1_0"
                 ]
